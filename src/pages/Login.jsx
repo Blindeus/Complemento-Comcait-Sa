@@ -11,6 +11,8 @@ const Login = ()=>{
     const [ user, setUser] = useState('');
     const [ password, setPassword] = useState('');
     const [ passwordError, setPasswordError] = useState (false)
+    const [ isLogin, setIsLogin] = useState (false)
+    const [ hasError, setHasError] = useState (false)
 
     function handleChange (name, value){
         if (name === 'usuario') {
@@ -25,11 +27,29 @@ const Login = ()=>{
         }
     }
 
-    function handleSubmit(){
-        let account = {user,password}
-        if (account) {
-            console.log('account',account)
+    function ifmatch(param){
+
+        if(param.user >0 && param.password.length > 0){
+            if(param.user === 'blind' && param.password === 'hola123'){
+                const { user, password } = param;
+                let ac = { user, password};
+                let account = JSON.stringify(ac);
+                localStorage.setItem('account', account)
+                setIsLogin(true);
+            }else {
+                setIsLogin(false);
+                setHasError(true)
+            }
+        }else {
+            setIsLogin(false);
+            setHasError(true)
         }
+    }
+
+    function handleSubmit(){
+        let account = {user, password}
+        if (account)
+          ifmatch(account);
     }
 
     console.log ('usuario', user)
@@ -40,6 +60,11 @@ const Login = ()=>{
     <div className='complement-login-content'>
     <ComplementTittle text='Complemento Retail'/>
      <ComplementTittle text='Comcait S.A'/>
+     { hasError &&
+     <label className='complement-label-error'>
+        contraseña o usuario incorrectos
+     </label>
+    }   
      <ComplementLabel text='Nombre de Usuario' />
      <ComplementInput
         attribute={{
@@ -65,9 +90,11 @@ const Login = ()=>{
           ¿No tienes cuenta? <strong>¡Crea la tuya ahora!</strong>
         </Link>
         </div>
-        <button onClick={handleSubmit} className='submit'>
-            Ingresar
-        </button>
+            <div>
+                <button onClick={handleSubmit} className='submit'>
+                    Ingresar
+                </button>
+            </div>
     </div>
       
     );
