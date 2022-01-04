@@ -1,9 +1,9 @@
 import React from 'react';
-import TableComparativeSale from './DashboardComparativeTableOne/TableComparativeSale';
+import TableComparativeSale from './TableComparativeSale';
 
 
 function DashboardComparative (){
-    return (
+    return ( 
     <div className = "dashboardcomparative-container-main">
         <div className='dashboardcomparative-box-container-table-one'>
             <div className='dashboardcomparative-tittle'>

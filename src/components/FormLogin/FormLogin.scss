@@ -1,0 +1,73 @@
+
+
+.login-form-container {
+  display: flex;
+  align-items: flex-start;
+  width: 25rem;
+  margin: auto;
+  flex-flow: column wrap;
+  align-items: center;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid #00000020;
+  padding: 1rem;
+  Button {
+    margin: 0.5em 0;
+    width: 10em;
+  }
+}
+
+.form-text-login {
+  display: flex;
+  flex-flow: column wrap;
+  width: 20em;
+  margin: 0;
+  color:#1D77AB;
+}
+
+.crear-cuenta-login,
+.olvido-password {
+  margin: 0.5em auto;
+  text-decoration: none;
+  color:black;
+}
+
+.crear-cuenta-login,
+.olvido-password {
+    font-size: small;
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #1D77AB;
+  }
+}
+
+.form-text1 {
+    color:#1D77AB;
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+
+  .login-button{
+      background-color: #53A1CE;
+  }
+
+.complement-login-header-tittle{
+  display: flex;
+  flex-flow: column wrap;
+  width: 18.75em;
+  margin: 0;
+  color: #000;
+  align-items: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.form-text2 {
+    color:black;
+    font-size: 1.3rem;
+    padding:20px;
+    font-weight: bold;
+  }
