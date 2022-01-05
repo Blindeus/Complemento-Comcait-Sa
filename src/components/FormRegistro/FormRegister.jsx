@@ -22,16 +22,11 @@ const FormRegister = () => {
   const [formValues, handleInputChange] = useForm({
     username: "",
     nombre: "",
-    apellido: "",
     email: "",
     confirmacion_email: "",
     password: "",
     confirmacion_password: "",
-    celular: "",
-    comuna: "",
-    calle: "",
-    numeracion: "",
-    depto: "",
+
   });
 
   const validarDatos = (e) => {
@@ -83,11 +78,11 @@ const FormRegister = () => {
   return (
       <div className="complement-register-container">
         <div className="complement-login-header-tittle">
-        <Label className="form-text2" htmlFor="username">
+        <Label className="form-text3" htmlFor="username">
             COMPLEMENTO TIENDAS PROPIAS
         </Label>
     <div clasName="complement-login-header-tittle">
-          <Label className="form-text2" htmlFor="username">
+          <Label className="form-text3" htmlFor="username">
             COMCAIT S.A
           </Label>
     </div>
@@ -96,11 +91,11 @@ const FormRegister = () => {
         <div className="container-form-register">
         <Label className="form-text-title" htmlFor="username">
             Registro de Usuario
-            </Label> 
-      <Row form>
+        </Label> 
+        <Row form>
         <Col lg={4} md={6} sm={12}>
-          <FormGroup className="form-title" row>
-            <Label className="form-text" htmlFor="username">
+          <FormGroup className="form-title2" row>
+            <Label className="form-text5" htmlFor="username">
               Nombre de usuario
             </Label>
             <Input
@@ -118,8 +113,8 @@ const FormRegister = () => {
           </FormGroup>
         </Col>
         <Col lg={4} md={6} sm={12}>
-          <FormGroup className="form-title" row>
-            <Label className="form-text" htmlFor="nombre">
+          <FormGroup className="form-title2" row>
+            <Label className="form-text5" htmlFor="nombre">
               Nombre
             </Label>
             <Input
@@ -137,27 +132,8 @@ const FormRegister = () => {
           </FormGroup>
         </Col>
         <Col lg={4} md={6} sm={12}>
-          <FormGroup className="form-title">
-            <Label className="form-text" htmlFor="apellido">
-              Apellido
-            </Label>
-            <Input
-              type="text"
-              id="apellido"
-              autoComplete="off"
-              name="apellido"
-              value={formValues.apellido}
-              required
-              onChange={(e) => {
-                handleInputChange(e);
-                validarDatos(e);
-              }}
-            />
-          </FormGroup>
-        </Col>
-        <Col lg={4} md={6} sm={12}>
-          <FormGroup className="form-title">
-            <Label className="form-text" htmlFor="email">
+          <FormGroup className="form-title2">
+            <Label className="form-text5" htmlFor="email">
               Correo
             </Label>
             <Input
@@ -175,8 +151,8 @@ const FormRegister = () => {
           </FormGroup>
         </Col>
         <Col lg={4} md={6} sm={12}>
-          <FormGroup className="form-title">
-            <Label className="form-text" htmlFor="password">
+          <FormGroup className="form-title2">
+            <Label className="form-text5" htmlFor="password">
               Contrase&ntilde;a
             </Label>
             <Input
@@ -190,14 +166,14 @@ const FormRegister = () => {
                 validarPassword(e);
               }}
             />
-            <FormFeedback tooltip className="form-info-register">
+            <FormFeedback tooltip>
               La contrase&ntilde;a debe tener m&iacute;nimo 6 c&aacute;racteres
               y m&aacute;ximo 16, adem&aacute;s, debe poseer un n&uacute;mero.
             </FormFeedback>
           </FormGroup>
         </Col>
       </Row>
-        <Button type="submit" color="warning" size="lg">
+        <Button type="submit" size="lg">
           Crear Cuenta
         </Button>
         <Link to="/" className="form-info-redirect">

@@ -16,21 +16,18 @@
     }
   }
 
-  .form-title {
+  .form-title2 {
     display: flex;
     flex-flow: column wrap;
-    width: 20em;
+    width: 20rem;
     margin: 10px;
     color: #000;
   }
   
-  .form-text {
-    color:#1D77AB;
-    font-size: 1.3rem;
-  }
+
   
   .form-register {
-      min-height: calc(100vh - 12vh - 140px - 10rem);
+      min-height: calc(100vh - 14vh - 140px - 10rem);
     button {
       margin-top: 1rem;
       background-color: #53A1CE;
@@ -59,19 +56,14 @@
               
           }
       }
-  
-  }
-  .form-info-register{
-      text-align: center;
-      font-size: small;
   }
   .form-info-redirect{
       text-decoration: none;
       color: #000;
   }
   .form-text-title{
-    color:black;
+    color:#53A1CE;
     font-size: 1.3rem;
     padding: 25px;
-    font-weight: bold;
+
   }

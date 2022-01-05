@@ -26,11 +26,11 @@ const FormLogin = () => {
   return (
     <div className="complement-login-container">
     <div className="complement-login-header-tittle">
-     <Label className="form-text2" htmlFor="username">
+     <Label className="form-text3" htmlFor="username">
             COMPLEMENTO TIENDAS PROPIAS
           </Label>
     <div className="complement-login-header-tittle">
-          <Label className="form-text2" htmlFor="username">
+          <Label className="form-text3" htmlFor="username">
             COMCAIT S.A
           </Label>
     </div>
@@ -70,7 +70,7 @@ const FormLogin = () => {
         <Link to="/recovery-password" className="olvido-password">
           <strong>¿Olvidaste tu contrase&ntilde;a?</strong>
         </Link>
-        <Button type="submit" color="warning" size="lg" className="login-button">
+        <Button type="submit" size="lg">
           Ingresar
         </Button>
         <Link to="/register" className="crear-cuenta-login">

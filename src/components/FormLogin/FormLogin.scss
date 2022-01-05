@@ -14,6 +14,8 @@
   Button {
     margin: 0.5em 0;
     width: 10em;
+    color:#000;
+    background-color: #53A1CE;
   }
 }
 
@@ -37,22 +39,16 @@
     font-size: small;
   a {
     color: #333;
-    text-decoration: none;
   }
   a:hover {
-    color: #1D77AB;
+    color: #53A1CE;;
   }
 }
 
 .form-text1 {
-    color:#1D77AB;
-    font-size: 1.3rem;
-    padding: 10px;
+    color: black;
   }
 
-  .login-button{
-      background-color: #53A1CE;
-  }
 
 .complement-login-header-tittle{
   display: flex;
@@ -66,8 +62,13 @@
 }
 
 .form-text2 {
-    color:black;
-    font-size: 1.3rem;
+    color:#53A1CE;
+    font-size: 25px;
     padding:20px;
-    font-weight: bold;
   }
+
+.form-text3{
+    font-size: 30px;
+    margin: 10px;
+}
+
