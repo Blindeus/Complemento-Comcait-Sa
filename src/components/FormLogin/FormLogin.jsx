@@ -22,13 +22,14 @@ const FormLogin = () => {
     }
   };
 
+
   return (
     <div className="complement-login-container">
     <div className="complement-login-header-tittle">
      <Label className="form-text2" htmlFor="username">
             COMPLEMENTO TIENDAS PROPIAS
           </Label>
-    <div clasName="complement-login-header-tittle">
+    <div className="complement-login-header-tittle">
           <Label className="form-text2" htmlFor="username">
             COMCAIT S.A
           </Label>

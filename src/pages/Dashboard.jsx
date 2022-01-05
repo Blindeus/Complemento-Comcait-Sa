@@ -7,7 +7,7 @@ export default function Dashboard() {
       <div className="dashboard">
     <Navbar/>
     <div className="dashboard-complement-container">
-      <div className="dashboard-complement-">
+      <div className="dashboard-complement">
       <DashboardComparative/>
       </div>
       </div>

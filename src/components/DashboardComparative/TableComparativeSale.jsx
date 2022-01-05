@@ -1,8 +1,7 @@
 import React from 'react';
 import { Table } from 'reactstrap';
 
-export default class TableComparativeSale {
-  render() {
+const TableComparativeSale = () => {
     return (
       <Table responsive>
         <thead>
@@ -48,4 +47,5 @@ export default class TableComparativeSale {
       </Table>
     );
   }
-}
+ export default TableComparativeSale;
+
