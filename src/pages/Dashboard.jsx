@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar/Navbar';
 export default function Dashboard() {
   return (
     <div className="dashboard">
-      <Navbar />
+        <Navbar/>
       <div className="dashboard-complement-container">
         <div className="dashboard-complement">
           <DashboardComparative />

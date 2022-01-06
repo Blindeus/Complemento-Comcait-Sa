@@ -1,0 +1,31 @@
+
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: #53a1ce;
+  color: white;
+  width: 100%;
+}
+
+.logo {
+  font-size: 25px;
+}
+
+.nav-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+  width: 15%;
+}
+
+.salir {
+  text-decoration: none;
+  font-size: 20px;
+  padding:10px 20px ;
+  margin: 0 10px;
+  cursor: pointer
+}
