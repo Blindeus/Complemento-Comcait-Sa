@@ -1,12 +1,11 @@
-import React from "react";
-import { Button, Form, FormGroup, Label, Input } from "reactstrap";
-import "./Recoverypassword.scss";
-import { useForm } from "../../hooks/useForm";
-
+import React from 'react';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import './Recoverypassword.scss';
+import { useForm } from '../../hooks/useForm';
 
 const RecoveryPassword = () => {
   const [formValues, handleInputChange] = useForm({
-    email: "",
+    email: '',
   });
 
   const { email } = formValues;

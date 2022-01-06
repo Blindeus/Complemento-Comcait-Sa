@@ -1,5 +1,3 @@
-
-
 .login-form-container {
   display: flex;
   align-items: flex-start;
@@ -14,8 +12,8 @@
   Button {
     margin: 0.5em 0;
     width: 10em;
-    color:#000;
-    background-color: #53A1CE;
+    color: #000;
+    background-color: #53a1ce;
   }
 }
 
@@ -24,33 +22,32 @@
   flex-flow: column wrap;
   width: 20em;
   margin: 0;
-  color:#1D77AB;
+  color: #1d77ab;
 }
 
 .crear-cuenta-login,
 .olvido-password {
   margin: 0.5em auto;
   text-decoration: none;
-  color:black;
+  color: black;
 }
 
 .crear-cuenta-login,
 .olvido-password {
-    font-size: small;
+  font-size: small;
   a {
     color: #333;
   }
   a:hover {
-    color: #53A1CE;;
+    color: #53a1ce;
   }
 }
 
 .form-text1 {
-    color: black;
-  }
+  color: black;
+}
 
-
-.complement-login-header-tittle{
+.complement-login-header-tittle {
   display: flex;
   flex-flow: column wrap;
   width: 18.75em;
@@ -62,13 +59,12 @@
 }
 
 .form-text2 {
-    color:#53A1CE;
-    font-size: 25px;
-    padding:20px;
-  }
-
-.form-text3{
-    font-size: 30px;
-    margin: 10px;
+  color: #53a1ce;
+  font-size: 25px;
+  padding: 20px;
 }
 
+.form-text3 {
+  font-size: 30px;
+  margin: 10px;
+}
