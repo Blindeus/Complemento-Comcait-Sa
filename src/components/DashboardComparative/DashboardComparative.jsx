@@ -4,6 +4,8 @@ import './DashboardComparative.scss';
 import DashboardComparativeSearch from './TableComparativeSearch';
 import Datepicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import { Input } from 'reactstrap';
+
 
 const DashboardComparative = () => {
   const [selectDate, setSelectedDate] = useState(null);
@@ -17,11 +19,11 @@ const DashboardComparative = () => {
           </div>
           <div className="dashboard-comparative-header">
             <div className="dashboard-comparative-select-filter">
-              <select>
+              <Input bsSize="sm" type='select'>
                 <option value="todas">Todas</option>
                 <option value="sei">Sei</option>
                 <option value="beauty">Beauty</option>
-              </select>
+              </Input>
             </div>
             <div className='dashboard-comparative-filters'>
               <div className="dashboardcomparative-date">
