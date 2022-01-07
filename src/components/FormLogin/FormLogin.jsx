@@ -22,11 +22,11 @@ const FormLogin = () => {
   return (
     <div className="complement-login-container">
       <div className="complement-login-header-tittle">
-        <Label className="form-text3" htmlFor="username">
+        <Label className="form-text3" htmlFor="tittle">
           COMPLEMENTO TIENDAS PROPIAS
         </Label>
         <div className="complement-login-header-tittle">
-          <Label className="form-text3" htmlFor="username">
+          <Label className="form-text3" htmlFor="tittle">
             COMCAIT S.A
           </Label>
         </div>

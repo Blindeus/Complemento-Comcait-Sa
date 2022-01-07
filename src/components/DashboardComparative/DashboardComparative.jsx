@@ -5,6 +5,7 @@ import DashboardComparativeSearch from './TableComparativeSearch';
 import Datepicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { Input } from 'reactstrap';
+import ReactHTMLTableToExcel from 'react-html-table-to-excel'
 
 
 const DashboardComparative = () => {

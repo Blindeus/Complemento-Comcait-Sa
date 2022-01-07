@@ -1,9 +1,20 @@
 import React from 'react';
 import { Table } from 'reactstrap';
+import ReactHTMLTableToExcel from 'react-html-table-to-excel'
 
 const TableComparativeSale = () => {
+
   return (
-    <Table  size="lg" bordered className="dashboard-comparative-table">
+    <div>
+    <ReactHTMLTableToExcel
+    id="botoneExportExcel"
+    className= "btn btn-primary"
+    table="Tabla comparativa diaria"
+    filename="Informe comparativa diaria COMCAIT"
+    sheet="pagina 1"
+    buttonText="Generar Informe"
+    />
+    <Table  size="lg" bordered className="dashboard-comparative-table" id="Tabla comparativa diaria">
       <thead className="dashboard-comparative-tittles">
         <tr>
           <th>Id</th>
@@ -56,7 +67,9 @@ const TableComparativeSale = () => {
           <td> -66%</td>
         </tr>
       </tbody>
+      
     </Table>
+    </div>
   );
 };
 
