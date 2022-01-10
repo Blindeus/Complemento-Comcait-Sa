@@ -5,8 +5,7 @@ import DashboardComparativeSearch from './TableComparativeSearch';
 import Datepicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { Input } from 'reactstrap';
-import ReactHTMLTableToExcel from 'react-html-table-to-excel'
-
+import ReactHTMLTableToExcel from 'react-html-table-to-excel';
 
 const DashboardComparative = () => {
   const [selectDate, setSelectedDate] = useState(null);
@@ -19,14 +18,14 @@ const DashboardComparative = () => {
             Comparativo Diario de Venta
           </div>
           <div className="dashboard-comparative-header">
-            <div className="dashboard-comparative-select-filter">
-              <Input bsSize="sm" type='select'>
-                <option value="todas">Todas</option>
-                <option value="sei">Sei</option>
-                <option value="beauty">Beauty</option>
-              </Input>
-            </div>
-            <div className='dashboard-comparative-filters'>
+            <div className="dashboard-comparative-filters">
+              <div className="dashboard-comparative-select-filter">
+                <Input bsSize="sm" type="select">
+                  <option value="todas">Todas</option>
+                  <option value="sei">Sei</option>
+                  <option value="beauty">Beauty</option>
+                </Input>
+              </div>
               <div className="dashboardcomparative-date">
                 <div>
                   <i className="far fa-calendar"></i>
@@ -40,6 +39,17 @@ const DashboardComparative = () => {
               </div>
               <div className="dashboard-comparative-search">
                 <DashboardComparativeSearch />
+              </div>
+              <div>
+                <ReactHTMLTableToExcel
+                  id="botoneExportExcel"
+                  className="btn btn-primary"
+                  position="center"
+                  table="Tabla comparativa diaria"
+                  filename="Informe comparativa diaria COMCAIT"
+                  sheet="pagina 1"
+                  buttonText="Generar Informe"
+                />
               </div>
             </div>
           </div>

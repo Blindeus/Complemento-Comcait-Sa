@@ -37,7 +37,7 @@
 .dashboard-comparative-header {
   display: flex;
   align-items: center;
-  width: 46rem;
+  width: 50rem;
   justify-content: space-between;
   margin:10px;
 }
@@ -48,5 +48,18 @@
 }
 
 .dashboard-comparative-filters{
-    display:flex
+    display:flex;
+    width: 53rem;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
 }
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+    }
+    .table-wrapper-scroll-y {
+    display: block;
+    }

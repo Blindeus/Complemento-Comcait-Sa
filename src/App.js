@@ -1,10 +1,8 @@
 import React from 'react';
 import './App.css';
-
-
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route 
 } from 'react-router-dom';
 
@@ -16,12 +14,12 @@ function App() {
   return (
     <> 
       <Router>
-        <Switch>
-          <Route  exact path = "/" component = {Login} />
-          <Route  exact path = "/register" component = {Register} />
-          <Route  exact path = "/dashboard" component = {Dashboard} />
-          <Route exact path = "/recovery-password" component = {RecoveryPassword}/>
-        </Switch>
+        <Routes>
+          <Route path = "/" element = {<Login/>} />
+          <Route   path = "/register" element = {<Register/>} />
+          <Route   path = "/dashboard" element = {<Dashboard/>} />
+          <Route  path = "/recovery-password" element = {<RecoveryPassword/>}/>
+        </Routes>
       </Router>
     </>
   )
